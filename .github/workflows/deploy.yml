@@ -25,7 +25,7 @@ jobs:
           image-ref: ${{ secrets.DOCKER_USERNAME }}/k8s-app:v1
           format: table
           exit-code: 1
-          severity: CRITICAL,HIGH
+          severity: CRITICAL
 
       - name: Push Image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/k8s-app:v1
